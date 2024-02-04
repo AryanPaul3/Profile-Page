@@ -1,0 +1,228 @@
+/* styles.css */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;  
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #201c1c;
+    color: beige;
+    height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    transform: scale(0.1);
+    position: absolute;
+    top: -16.4rem;
+    left: -13rem;
+}
+.navbar {
+    margin-top: 1rem;
+    background-color: rgb(104, 95, 97);
+    text-align: center;
+    width: 65%;
+    height: 3rem;
+    border-radius: 5rem;
+}
+.navbar h1 {
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0.1em;
+    display: inline-block;
+    color: rgb(244, 236, 214);
+}
+.intro {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 2rem;
+}
+.image {
+    /* background-color: pink; */
+    background-image: url("Picture2.png");
+    background-size: cover;
+    height: 20rem;
+    width: 19em;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    /* transition: 0.5s;
+    transition-delay: 0.5s; */
+}
+/* .image:hover {
+    transform: scale(1.1);
+} */
+.main-img {
+    transform: scale(0.91);
+    position: relative;
+    right: 1px;
+    /* background-color: white; */
+}
+.hello {
+    /* background-color: red; */
+    /* margin-left: 9%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#greeting {
+    margin-left: 2%;
+    font-size: 2rem;
+    font-family: 'Protest Revolution', sans-serif;
+    position: relative;
+    top: 1.6rem;
+}
+.name {
+    font-size: 7em;
+    font-family: 'Protest Riot', sans-serif;
+    color: #A7CAB1;
+}
+#clgName {
+    font-family: 'Montserrat', sans-serif;
+}
+.hello p span {
+    color: rgb(240, 168, 104); 
+    font-weight: 600;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+.icons {
+    /* background-color: aqua; */
+    width: 8rem;
+    margin-left: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+i {
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+i:hover {
+    color: rgb(240, 168, 104);
+    transform: scale(1.1);
+}
+a {
+    text-decoration: none;
+    color: beige;
+}
+.mail-button {
+    padding: 0.5rem;
+    border-radius: 15px;
+    transition: 0.4s;
+    background-color: beige;
+    color: #201c1c;
+    font-weight: 500;
+}
+.mail-button:hover {
+    background-color: rgb(240, 168, 104);
+    /* color: rgb(240, 168, 104); */
+    transform: translatey(-3px);
+}
+.edu {
+    position: relative;
+    top: 4rem;
+    left: 10rem;
+    width: 20rem;
+    margin-bottom: 2rem;
+    /* background-color: aqua; */
+    display: flex;
+}
+.edu-content {
+    font-size: 1.1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #4DCCBD;
+}
+.edu-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 168, 104);
+    color: #201c1c;
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 1.4rem;
+    height: 5.4rem;
+    width: 18rem;
+    border-radius: 0.7em;
+    position: absolute;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.edu-slider i {
+    position: relative;
+    right: 0.7em;
+}
+.edu-content p {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+.edu:hover .edu-slider {
+    transform: translate(18rem);
+}
+footer {
+    bottom: 0rem;
+    height: 1.7rem;
+    margin-top: 6rem;
+    background-color: rgb(104, 95, 97);
+    font-size: 1.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 33.33%;
+    height: 33.33%;
+    background-color: red;
+}
+#heart {
+    /* background-color: white; */
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 5%;
+    animation: rotate 0.7s linear 0.5s infinite alternate ;
+}
+
+@keyframes rotate {
+    from {
+        scale: 1;
+    }
+    to { 
+        scale: 1.2;
+    }
+}
+#bottom{
+    transform: rotate(45deg);
+    position: absolute;
+    left: 29.5%;
+    bottom: 32.6%;
+    border-radius: 2%;
+}
+#circle1 {
+    border-radius: 49%;
+    position: absolute;
+    left: 15.5%;
+    top: 20%;
+    
+}
+#circle2 {
+    border-radius: 49%;
+    position: absolute;
+    left: 43.5%;
+    top: 20%;
+}
