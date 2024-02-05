@@ -153,6 +153,7 @@ a {
     background-color: beige;
     color: #201c1c;
     font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .mail-button:hover {
     background-color: rgb(240, 168, 104);
