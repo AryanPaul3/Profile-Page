@@ -55,6 +55,11 @@ header {
     background: rgb(104, 95, 97); /* the main color */
     width: 60vw;
   }
+@media screen and (max-width: 440px) {
+    header {
+        transform: scale(0.8);
+    }
+}
 .intro {
     /* background-color: aqua; */
     display: flex;
