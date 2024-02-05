@@ -15,38 +15,64 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #201c1c;
     color: beige;
-    height: 100vh;
+    /* height: 100vh; */
 }
 header {
     display: flex;
     justify-content: center;
+    /* position:relative; */
 }
 .logo {
-    transform: scale(0.1);
+    transform: scale(0.104);
     position: absolute;
-    top: -16.4rem;
-    left: -13rem;
+    top: -16.9rem;
+    left: -28rem;
 }
 .navbar {
     margin-top: 1rem;
-    background-color: rgb(104, 95, 97);
+    /* background-color: rgb(104, 95, 97); */
     text-align: center;
-    width: 65%;
+    width: 65vw;
     height: 3rem;
     border-radius: 5rem;
+    position:relative; 
 }
 .navbar h1 {
     font-family: 'Dancing Script', cursive;
     margin-top: 0.1em;
     display: inline-block;
     color: rgb(244, 236, 214);
+    font-weight: 700;
+    /* font-size: 1.8rem; */
 }
+/* HTML: <div class="ribbon">Your text content</div> */
+.ribbon {
+    --r: .8em; /* control the ribbon shape */
+    
+    padding-inline: calc(var(--r) + .3em);
+    line-height: 1.8;
+    clip-path: polygon(0 0,100% 0,calc(100% - var(--r)) 50%,100% 100%,0 100%, var(--r) 50%);
+    background: rgb(104, 95, 97); /* the main color */
+    width: 60vw;
+  }
 .intro {
     /* background-color: aqua; */
     display: flex;
     justify-content: space-around;
     position: relative;
     top: 2rem;
+}
+@media screen and (max-width: 937px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-img {
+        width: 11.35rem;
+        height: 21rem;
+        bottom: 0.6rem;
+    }
+
 }
 .image {
     /* background-color: pink; */
@@ -133,6 +159,9 @@ a {
     /* color: rgb(240, 168, 104); */
     transform: translatey(-3px);
 }
+.content {
+    height: fit-content;
+}
 .edu {
     position: relative;
     top: 4rem;
@@ -195,7 +224,7 @@ footer {
     width: 1.9rem;
     height: 1.9rem;
     border-radius: 5%;
-    animation: rotate 0.7s linear 0.5s infinite alternate ;
+    animation: rotate 0.5s linear 0.5s infinite alternate ;
 }
 
 @keyframes rotate {
@@ -203,7 +232,7 @@ footer {
         scale: 1;
     }
     to { 
-        scale: 1.2;
+        scale: 1.22;
     }
 }
 #bottom{
@@ -225,4 +254,52 @@ footer {
     position: absolute;
     left: 43.5%;
     top: 20%;
+}
+@media screen and (max-width: 500px) {
+    .logo {
+        left: -25.5rem;
+    }
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image {
+        transform: scale(0.9);
+    }
+    .main-img {
+        width: 11.35rem;
+        height: 21rem;
+        bottom: 0.6rem;
+    }
+    #greeting {
+        font-size: 1em;
+        top: 0.6rem;
+    }
+    .name {
+        font-size: 4em;
+    }
+    #clgName {
+        font-size: 0.8rem;
+    }
+    .contact {
+        transform: scale(0.8);
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 1rem;
+    }
+    .edu {
+        left: 4vw;
+        transform: scale(0.9);
+    }
+    #heart {
+        height: 1.7rem;
+        width: 1.7rem;
+    }
+    footer {
+        font-size: 1rem;
+    }
 }
