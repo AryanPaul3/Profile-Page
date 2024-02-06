@@ -205,8 +205,10 @@ a {
     list-style: none;
     margin-bottom: 0.5rem;
 }
-.edu:hover .edu-slider {
-    transform: translate(18rem);
+@media screen and (min-width: 500px) {
+    .edu:hover .edu-slider {
+        transform: translate(18rem);
+    }
 }
 footer {
     bottom: 0rem;
@@ -300,6 +302,9 @@ footer {
     .edu {
         left: 4vw;
         transform: scale(0.9);
+    }
+    .edu-slider:hover {
+        transform: translate(18rem);
     }
     #heart {
         height: 1.7rem;
