@@ -54,7 +54,7 @@ header {
     clip-path: polygon(0 0,100% 0,calc(100% - var(--r)) 50%,100% 100%,0 100%, var(--r) 50%);
     background: rgb(104, 95, 97); /* the main color */
     width: 60vw;
-  }
+}
 @media screen and (max-width: 440px) {
     header {
         transform: scale(0.8);
@@ -73,7 +73,7 @@ header {
         align-items: center;
     }
     .main-img {
-        width: 11.35rem;
+        /* width: 11.35rem; */
         height: 21rem;
         bottom: 0.6rem;
     }
@@ -139,11 +139,11 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-i {
+.icons i {
     font-size: 1.5rem;
     transition: 0.5s;
 }
-i:hover {
+.icons i:hover {
     color: rgb(240, 168, 104);
     transform: scale(1.1);
 }
@@ -162,18 +162,27 @@ a {
 }
 .mail-button:hover {
     background-color: rgb(240, 168, 104);
-    /* color: rgb(240, 168, 104); */
     transform: translatey(-3px);
 }
-.content {
-    height: fit-content;
-}
-.edu {
+.main {
     position: relative;
     top: 4rem;
-    left: 10rem;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+.content {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.edu {
+    /* position: relative;
+    top: 4rem;
+    left: 10rem; */
     width: 20rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     /* background-color: aqua; */
     display: flex;
 }
@@ -210,10 +219,45 @@ a {
         transform: translate(18rem);
     }
 }
+.container {
+    /* border: 2px solid black; */
+    width: 20rem;
+    height:13rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 168, 104);
+    color: #201c1c;    
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 2rem;
+    border-radius: 0.7em;
+    transition: 0.6s;
+}
+.container i {
+    position: relative;
+    right: 0.7em;
+}
+.container:hover {
+    transform: scale(1.04);
+    /* color: #d91bbf;
+    color: #4DCCBD;
+    color: #477998;
+    color: #1C7293; */
+    /* color: beige; */
+    /* color: #7F6A93; */
+    color: #CA2E55;
+}
+
+.container:active {
+    transform: scale(1);
+}
+
 footer {
     bottom: 0rem;
     height: 1.7rem;
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
+    position: relative;
+    top: 4rem;
     background-color: rgb(104, 95, 97);
     font-size: 1.3rem;
     font-family: 'Josefin Sans', sans-serif;
@@ -292,10 +336,13 @@ footer {
     .contact {
         transform: scale(0.8);
     }
+    .main {
+        justify-content: center;
+    }
     .content {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: space-around;
         position: relative;
         top: 1rem;
     }
@@ -305,6 +352,9 @@ footer {
     }
     .edu-slider:hover {
         transform: translate(18rem);
+    }
+    .container {
+        display: none;
     }
     #heart {
         height: 1.7rem;
