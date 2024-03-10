@@ -13,7 +13,7 @@
         <div class="navbar">
             <h1 class="ribbon">My Profile</h2>
             <!-- <a href="#"><p>Projects</p></a> -->
-            <a href="#"><img src="Picture4.png" class="logo"></a>
+            <a href="index.html"><img src="Picture4.png" class="logo"></a>
         </div>
     </header>
     <div class="intro">
@@ -34,25 +34,32 @@
             </div>
         </div>
     </div>
-    <div class="content">
-        <div class="edu">
-            <div class="edu-content">
-                <p style="margin-top: 0.3rem;">Got 93.6% in 10th CBSE Board</p>
-                <p>Got 94.4% in 12th CBSE Board</p>
-                <p>Secured 5086 CRL in Jee Mains</p>
-                
+    <div class="main">
+        <div class="content">
+            <div class="edu">
+                <div class="edu-content">
+                    <p style="margin-top: 0.3rem;">Got 93.6% in 10th CBSE Board</p>
+                    <p>Got 94.4% in 12th CBSE Board</p>
+                    <p>Secured 5086 CRL in Jee Mains</p>
+                    
+                </div>
+                <div class="edu-slider"><i class="fa-solid fa-award"></i>EDUCATION</div>
             </div>
-            <div class="edu-slider"><i class="fa-solid fa-award"></i>EDUCATION</div>
-        </div>
-        <div class="edu">
-            <div class="edu-content">
-                <p style="margin-top: 0.3rem;">Good Knowledge of C/C++</p>
-                <p>Thoda bahot HTML and CSS</p>
-                <p>DBMS : MySQL</p>
-                
+            <div class="edu">
+                <div class="edu-content">
+                    <p style="margin-top: 0.3rem;">Good Knowledge of C/C++</p>
+                    <p>Thoda bahot HTML and CSS</p>
+                    <p>DBMS : MySQL</p>
+                    
+                </div>
+                <div class="edu-slider"><i class="fa-solid fa-code"></i>SKILLS</div>
             </div>
-            <div class="edu-slider"><i class="fa-solid fa-code"></i>SKILLS</div>
         </div>
+        <a href="projects.html">
+            <div class="container">
+                <i id="skull" class="fa-solid fa-diagram-project"></i>PROJECTS
+            </div>
+        </a>
     </div>
     <footer>
         <div>Made with</div>
@@ -64,5 +71,19 @@
         <div style="position: relative; right: 0.1%;">By Aryan</div>
         
     </footer>
+
+    <script>
+        const project = document.querySelector(".container");
+        const icon = document.getElementById("skull");
+        project.addEventListener("click" , ()=> {
+            if (icon.className=="fa-solid fa-diagram-project") {
+                icon.className = "fa-solid fa-skull";
+            }
+            else {
+                icon.className="fa-solid fa-diagram-project"
+            }
+            
+        })
+    </script>
 </body>
 </html>
