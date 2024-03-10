@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body id="body">
+    <p class="heading">Weather App</p>
+    <div class="main">
+        <div class="input">
+            <input style="font-size: 1rem;" id="city" type="text" placeholder="Enter City Name">
+            <button id="search-button">Search</button>
+        </div>
+        <div class="output">
+            <div class="left">
+                <pre><span id="time">18:23</span></pre><br>
+                <pre class="down color" id="temp">16°</pre>
+                <pre class="down">Feels Like: <span class="color" id="feel">18°</span></pre>
+            </div>
+            <div class="right">
+                <br><br>
+                <pre><span class="color" id="condition">Clear</span></pre>
+                <pre>Precip: <span class="color" id="prep">0%</span></pre>
+                <pre>Humidity: <span class="color" id="humid">77%</span></pre>
+                <pre>Wind: <span class="color" id="windSpeed">10 km/h</span></pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>

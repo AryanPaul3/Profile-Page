@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+* {
+    font-family: "Truculenta", sans-serif;
+}
+body {   
+    /* #C4DFE6 */
+    font-family: "Truculenta", sans-serif;
+    font-weight: bold;
+    background-color: #201c1c;
+}
+
+.heading{
+    color: beige;
+    text-align: center;
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: 1s;
+}
+.heading:hover {
+    color: rgb(240, 168, 104);;
+}
+.calculator {
+    /* width: 480px; */
+    width: 30rem;
+    margin: 5rem auto;
+    padding: 20px;
+    box-shadow: 0 0 1rem  rgba(0,0,0,0.55);
+    border-radius: 20px;
+    background-color: #A1D6E2;
+}
+  
+.input-group {
+    margin-bottom: 10px;
+}
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+::placeholder {
+    color: #201c1c;
+    opacity: 1; 
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: "Truculenta", sans-serif;
+}
+input {
+    width : 90%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 7px;
+    height: 20px;
+}
+  
+button {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    background-color: #1995AD;
+    color: whitesmoke;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 1.3rem;
+    font-size: 1rem;
+}
+  
+button:hover {
+    transform: scale(1.035);
+    background-color: rgba(220, 140, 11, 0.937);
+    color: #201c1c;
+}
+  
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.BMI{
+    font-size: 20px;
+}
+  

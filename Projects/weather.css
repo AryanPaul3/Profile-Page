@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Truculenta", sans-serif;
+    font-weight: bold;
+    color: #201c1c;
+    text-align: center;
+}
+body {
+    background-color: #201c1c;
+}
+.heading{
+    color: beige;
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: 1s;
+}
+.heading:hover {
+    color: rgb(240, 168, 104);;
+}
+.main {
+    width: 25rem;
+    margin: 5rem auto;
+    background-color: #A7CAB1;
+    /* background-color: rgb(240, 168, 104); */
+    /* height: fit-content; */
+    height: 22rem;
+    width: 38rem;
+    border-radius: 2rem;
+    transition: 0.4s;
+}
+
+.input{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    /* background-color: aqua; */
+}
+#city {
+    border-style: none;
+    padding: 0.6rem 3rem;
+    border-radius: 0.4rem;
+    background-color: beige;
+}
+::placeholder {
+    color: #201c1c;
+    opacity: 1; 
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+#search-button {
+    border-style: none;
+    padding: 0.5rem 1.1rem;
+    /* color: #4f2626; */
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: beige;
+}
+#search-button:hover {
+    transform: scale(1.01);
+}
+#search-button:active {
+    transition: 0.1s;
+    transform: scale(0.95);
+}
+.output {
+    /* margin-top: 1rem; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.4rem;
+}
+#temp {
+    font-size: 3rem;
+}
+.down {
+    position: relative;
+    top: 1.2rem;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1.4rem;
+}
+.color {
+    color: #1C7293;
+    /* color: #E63462;
+    color: #847996; */
+}

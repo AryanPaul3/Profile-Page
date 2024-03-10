@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;  
+    font-family: 'Josefin Sans', sans-serif;
+}
+body {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* font-family: "Truculenta", sans-serif; */
+    background-color: #201c1c;
+    color: beige;
+    /* height: 100vh; */
+}
+header {
+    display: flex;
+    justify-content: center;
+    /* position:relative; */
+}
+.logo {
+    transform: scale(0.104);
+    position: absolute;
+    top: -16.9rem;
+    left: -28rem;
+}
+.navbar {
+    margin-top: 1rem;
+    /* background-color: rgb(104, 95, 97); */
+    font-size: 1.1rem;
+    text-align: center;
+    width: 65vw;
+    height: 3rem;
+    border-radius: 5rem;
+    position:relative; 
+}
+.navbar h1 {
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0.1em;
+    display: inline-block;
+    color: rgb(244, 236, 214);
+    font-weight: 700;
+    /* font-size: 1.8rem; */
+}
+/* HTML: <div class="ribbon">Your text content</div> */
+.ribbon {
+    --r: .8em; /* control the ribbon shape */
+    
+    padding-inline: calc(var(--r) + .3em);
+    line-height: 1.8;
+    clip-path: polygon(0 0,100% 0,calc(100% - var(--r)) 50%,100% 100%,0 100%, var(--r) 50%);
+    background: rgb(104, 95, 97); /* the main color */
+    width: 60vw;
+}
+@media screen and (max-width: 440px) {
+    header {
+        transform: scale(0.8);
+    }
+}
+/* div{
+    width: 1200px;
+    margin: 0 auto;
+     border: white solid;
+     padding: 10px;
+} */
+.content {
+    position: relative;
+    top: 3rem;
+    /* left: 1rem; */
+    margin-left: 1rem;
+}
+.content a {
+    font-weight: 300;
+    font-family: "Truculenta", sans-serif;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: beige;
+    transition: 0.3s;
+}
+.content a:hover {
+    color: rgb(240, 168, 104);;
+}
+footer {
+    bottom: 0rem;
+    height: 1.7rem;
+    /* margin-top: 6rem; */
+    position: relative;
+    top: 4rem;
+    background-color: rgb(104, 95, 97);
+    font-size: 1.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 33.33%;
+    height: 33.33%;
+    background-color: red;
+}
+#heart {
+    /* background-color: white; */
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 5%;
+    animation: rotate 0.5s linear 0.5s infinite alternate ;
+}
+
+@keyframes rotate {
+    from {
+        scale: 1;
+    }
+    to { 
+        scale: 1.22;
+    }
+}
+#bottom{
+    transform: rotate(45deg);
+    position: absolute;
+    left: 29.5%;
+    bottom: 32.6%;
+    border-radius: 2%;
+}
+#circle1 {
+    border-radius: 49%;
+    position: absolute;
+    left: 15.5%;
+    top: 20%;
+    
+}
+#circle2 {
+    border-radius: 49%;
+    position: absolute;
+    left: 43.5%;
+    top: 20%;
+}
