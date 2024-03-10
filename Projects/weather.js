@@ -12,7 +12,7 @@ const windSpeed = document.getElementById("windSpeed");
 
 async function getData (cityName) {
     const promise = await fetch (
-        `http://api.weatherapi.com/v1/current.json?key= e51064633c484c468ce92511240903 &q=${cityName}&aqi=yes`
+        `https://api.weatherapi.com/v1/current.json?key= e51064633c484c468ce92511240903 &q=${cityName}&aqi=yes`
     );
     return await promise.json();
 }
