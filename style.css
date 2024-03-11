@@ -55,11 +55,7 @@ header {
     background: rgb(104, 95, 97); /* the main color */
     width: 60vw;
 }
-@media screen and (max-width: 440px) {
-    header {
-        transform: scale(0.8);
-    }
-}
+
 .intro {
     /* background-color: aqua; */
     display: flex;
@@ -77,7 +73,7 @@ header {
         height: 21rem;
         bottom: 0.6rem;
     }
-
+    
 }
 .image {
     /* background-color: pink; */
@@ -181,7 +177,7 @@ a {
     /* position: relative;
     top: 4rem;
     left: 10rem; */
-    width: 20rem;
+    width: 18rem;
     /* margin-bottom: 2rem; */
     /* background-color: aqua; */
     display: flex;
@@ -307,6 +303,25 @@ footer {
     left: 43.5%;
     top: 20%;
 }
+@media screen and (max-width: 750px) {
+    header {
+        transform: scale(0.9);
+    }
+    .container {
+        font-size: 1.4rem;
+        height: 5.4rem;
+        width: 18rem;
+    }
+    .main {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content {
+        height: 14rem;
+        justify-content: space-evenly;
+    }
+}
 @media screen and (max-width: 500px) {
     .logo {
         left: -25.5rem;
@@ -342,9 +357,9 @@ footer {
     .content {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        position: relative;
-        top: 1rem;
+        justify-content: space-evenly;
+        /* position: relative;
+        top: 1rem; */
     }
     .edu {
         left: 4vw;
@@ -354,7 +369,7 @@ footer {
         transform: translate(18rem);
     }
     .container {
-        display: none;
+        transform: scale(0.9);
     }
     #heart {
         height: 1.7rem;
@@ -362,5 +377,10 @@ footer {
     }
     footer {
         font-size: 1rem;
+    }
+}
+@media screen and (max-width: 440px) {
+    header {
+        transform: scale(0.8);
     }
 }
