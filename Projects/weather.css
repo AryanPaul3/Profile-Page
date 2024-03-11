@@ -103,3 +103,48 @@ body {
     /* color: #E63462;
     color: #847996; */
 }
+@media screen and (max-width: 870px) {
+    .main {
+        transform: scale(0.9);
+    }
+}
+@media screen and (max-width: 670px) {
+    .main {
+        width: 30rem;
+        height: 20rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    .heading {
+        font-size: 3rem;
+    }
+    .main {
+        width: 25rem;
+        height: 17rem;
+    }
+    #city {
+        padding: 0.5rem 1rem;
+        border-radius: 0.4rem;
+    }
+    ::placeholder {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    #search-button {
+        padding: 0.5rem 1.1rem;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .left {
+        font-size: 1rem;
+    }
+    #temp {
+        font-size: 2.5rem;
+    }
+    .down {
+        top: 0.4rem;
+    }
+    .right {
+        font-size: 1rem;
+    }
+}
