@@ -54,19 +54,14 @@ header {
     background: rgb(104, 95, 97); /* the main color */
     width: 60vw;
 }
-@media screen and (max-width: 440px) {
-    header {
-        transform: scale(0.8);
-    }
-}
 /* div{
     width: 1200px;
     margin: 0 auto;
      border: white solid;
      padding: 10px;
-} */
-.content {
-    position: relative;
+    } */
+    .content {
+        position: relative;
     top: 3rem;
     /* left: 1rem; */
     margin-left: 1rem;
@@ -78,9 +73,11 @@ header {
     text-decoration: none;
     color: beige;
     transition: 0.3s;
+    cursor: pointer;
 }
 .content a:hover {
-    color: rgb(240, 168, 104);;
+    color: rgb(240, 168, 104);
+    font-size: 1.4rem;
 }
 footer {
     bottom: 0rem;
@@ -136,4 +133,33 @@ footer {
     position: absolute;
     left: 43.5%;
     top: 20%;
+}
+@media screen and (max-width: 750px) {
+    header {
+        transform: scale(0.9);
+    }
+}
+@media screen and (max-width: 500px) {
+    header {
+        transform: scale(0.9);
+    }
+    .logo {
+        left: -25.5rem;
+    }
+    .content a:hover {
+        color: rgb(240, 168, 104);
+        font-size: 1.2rem;
+    }
+    #heart {
+        height: 1.7rem;
+        width: 1.7rem;
+    }
+    footer {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 440px) {
+    header {
+        transform: scale(0.8);
+    }
 }
