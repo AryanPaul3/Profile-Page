@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Truculenta", sans-serif;
+    font-weight: bold;
+    color: #201c1c;
+    /* color: white; */
+    /* color: white; */
+    text-align: center;
+}
+body {
+    background-color: #201c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading{
+    color: beige;
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: 1s;
+}
+.heading:hover {
+    color: rgb(240, 168, 104);;
+}
+.container{
+    background-color: #A1D6E2;
+    background-color: #A7CAB1;
+    height: fit-content;
+    /* padding: 20px; */
+    margin-top: 4rem;
+    width: 30rem;
+    border-radius: 1.2rem;
+    color: black;
+    box-shadow: 0 0 0.2rem white;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    /* width: 370px; */
+    padding: 2rem;
+    /* background-color: #5ecce2; */
+    /* margin: auto; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 1rem rgba(28, 27, 27, 0.5); */
+    height: fit-content;
+}
+span{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+input[type="number"] {
+    border-style: none;
+    margin-bottom:1rem ;
+    /* width: 230px; */
+    width: 12rem;
+    /* height: 26px; */
+    border-radius: 0.4rem;
+    background-color: #dfdfe4 ;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+}
+::placeholder {
+    color: #201c1c;
+    opacity: 1; 
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: "Truculenta", sans-serif;
+}
+button {
+    margin-top: 1.4rem;
+    padding: 0.5rem 1rem;
+    color: #201c1c;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    transition-duration: 0.4s;
+    background-color: beige;
+}
+button:hover {
+    transform: scale(1.05);
+    background-color: rgb(240, 168, 104);
+}
+button:active {
+    transform: scale(1);
+}
+.table{
+    text-align: center;
+    margin-top: 2rem;
+}
+.table h2 {
+    color: beige;
+    display: none;
+}
+table {
+    border-collapse:collapse;
+    width: 50%;
+    margin: 1rem auto;
+    /* box-shadow: 0 0 1rem rgba(28, 27, 27, 0.5); */
+    border-radius: 1rem;
+    background-color: #A7CAB1;
+    box-shadow: 0 0 0.4rem white;
+}
+
+table, th, td {
+    /* border: 1px solid black; */
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 1rem;
+}

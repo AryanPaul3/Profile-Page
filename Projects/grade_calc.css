@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Truculenta", sans-serif;
+    font-weight: bold;
+    color: #201c1c;
+    /* color: white; */
+    text-align: center;
+}
+body {
+    background-color: #201c1c;
+}
+.heading{
+    color: beige;
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: 1s;
+}
+.heading:hover {
+    color: rgb(240, 168, 104);;
+}
+.main {
+    margin-top: 2rem;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    width: 30rem;
+    height: 15rem;
+    margin: 0 auto;
+    background-color: aqua;
+    background-color: #A7CAB1;
+    border-radius: 1rem;
+}
+.subject {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.credit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.grade {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+input {
+    border-style: none;
+    border-radius: 0.2rem;
+}
+#display p {
+    color: beige;
+    /* background-color: aqua; */
+}
+#display span {
+    color: beige;
+}
+.result {
+    margin-top: 1rem;
+}
+#butt {
+    border-style: none;
+    padding: 0.3rem 1rem;
+    /* color: #4f2626; */
+    /* font-size: 1.1rem; */
+    font-weight: 500;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: beige;
+}
+#butt:hover {
+    transform: scale(1.05);
+    background-color: rgb(240, 168, 104);
+}
+#butt:active {
+    transform: scale(1);
+}
+#display {
+    margin-top: 1rem;
+    display: none;
+}

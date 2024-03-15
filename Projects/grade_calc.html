@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="grade_calc.css">
+</head>
+<body>
+    <p class="heading">Grade Calculator</p>
+
+    <div class="main">
+        <div class="content">
+            <div class="subject">
+                <div class="course">COURSE-1 :</div>
+                <div class="course">COURSE-2 :</div>
+                <div class="course">COURSE-3 :</div>  
+                <div class="course">COURSE-4 :</div>
+                <div class="course">COURSE-5 :</div>
+                <div class="course">COURSE-6 :</div>  
+                <div class="course">COURSE-7 :</div>
+            </div>
+            <div class="credit">
+                <div class="max-credit"><input  placeholder = "Credits for course" type="Number" id="1" value="5"></div>
+                <div class="max-credit"><input  placeholder = "Credits for course" type="Number" id="2" value="4"></div>
+                <div class="max-credit"><input  placeholder = "Credits for course" type="Number" id="3" value="4"></div>  
+                <div class="max-credit"><input  placeholder = "Credits for course" type="Number" id="4" value="4"></div>
+                <div class="max-credit"><input  placeholder = "Credits for course" type="Number" id="5" value="2"></div>
+                <div class="max-credit"><input  placeholder = "Credits for course" type="Number" id="6" value="1"></div>  
+                <div class="max-credit"><input  placeholder = "Credits for course" type="Number" id="7" ></div>
+            </div>
+            <div class="grade">
+                <div class="secured-credit"><input placeholder= "GPA secured" type="Number" > </div>
+                <div class="secured-credit"><input placeholder= "GPA secured" type="Number" > </div>
+                <div class="secured-credit"><input placeholder= "GPA secured" type="Number" > </div>  
+                <div class="secured-credit"><input placeholder= "GPA secured" type="Number" > </div>
+                <div class="secured-credit"><input placeholder= "GPA secured" type="Number" > </div>
+                <div class="secured-credit"><input placeholder= "GPA secured" type="Number" > </div>  
+                <div class="secured-credit"><input placeholder= "GPA secured" type="Number" > </div>
+            </div>
+        </div>
+    </div>
+    <div class="result">
+        <button id="butt">CALC YOUR CG</button>
+        <div id="display">
+            <p>Your CGPA is: <span id="cg"></span>, Grade: <span id="grade"></span>, Result: <span id="pass"></span> </p>
+        </div>
+    </div>
+
+    <script src="grade_calc.js"></script>
+</body>
+</html>

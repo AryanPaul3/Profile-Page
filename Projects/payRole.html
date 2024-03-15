@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Role Management</title>
+    <link rel="stylesheet" href="payRole.css">
+</head>
+<body>
+    <div class="heading">Pay Role Management</div>
+    <div class="container">
+        <div class = "content" id="bill-section">
+            <span>Enter Bill Amount:</span>
+            <input type="number" id="bill"  placeholder="₹">
+            <span for="paid">Enter Paid Amount:</span>
+            <input type="number" id="paid"  placeholder="₹">
+        </div>
+    </div>
+    <button onclick="calc()">CALCULATE MINIMUM NOTES</button>
+    <div class = "table" id="table">
+        <h2>Minimum Notes:</h2>
+        <table id="notes">
+        </table>
+    </div>
+
+    <script src="payRole.js"></script>
+</body>
+</html>

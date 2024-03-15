@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Truculenta", sans-serif;
+    font-weight: bold;
+    color: #201c1c;
+    color: white;
+    text-align: center;
+}
+body {
+    background-color: #201c1c;
+}
+.content {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+.heading{
+    color: beige;
+    /* position: fixed; */
+    text-align: center;
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: 1s;
+}
+.heading:hover {
+    color: rgb(240, 168, 104);
+}
+/* styling navlist */
+#navlist {
+    background-color: #0074D9;
+    background-color: #A7CAB1;
+    background-color: rgb(240, 168, 104);
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    top: -6rem;
+    width: auto;
+    display: block;
+    transition: top 0.3s;
+    border-radius: 0.8rem;
+}
+      
+/* styling navlist anchor element */
+#navlist a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0.8rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    transition: 0.5s;
+}
+      
+/* hover effect of navlist anchor element */
+#navlist a:hover {
+    color: #201c1c;
+    background-color: #f2f2f2;
+}
+@media screen and (max-width: 870px) {
+    #navlist a {
+        font-size: 0.7rem;
+    }
+    #navlist a {
+        padding: 0.6rem;
+    }
+}
