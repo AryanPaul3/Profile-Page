@@ -133,6 +133,7 @@ input {
     }
     .secured-credit input {
         height: 0.9rem;
+        font-size: 0.6rem;
         width: 4rem;
     }
     ::placeholder {
