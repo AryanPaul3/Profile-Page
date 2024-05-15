@@ -89,3 +89,58 @@ input {
     margin-top: 1rem;
     display: none;
 }
+@media screen and (max-width: 650px) {
+    .heading {
+        font-size: 3.4rem;
+    }
+    .content {
+        width: 22rem;
+        height: 12rem;
+    }
+    .course {
+        font-size: 0.7rem;
+    }
+    .max-credit input {
+        font-size: 0.7rem;
+        height: 0.9rem;
+    }
+    .secured-credit input {
+        height: 0.9rem;
+    }
+    ::placeholder {
+        font-size: 0.7rem;
+    }
+    #butt {
+        padding: 0.2rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .content {
+        width: 16rem;
+        height: 10.4rem;
+    }
+    .course {
+        font-size: 0.7rem;
+    }
+    .max-credit input {
+        font-size: 0.6rem;
+        height: 0.9rem;
+        width: 4rem;
+    }
+    .secured-credit input {
+        height: 0.9rem;
+        width: 4rem;
+    }
+    ::placeholder {
+        font-size: 0.6rem;
+    }
+    
+    #butt {
+        padding: 0.15rem 0.7rem;
+        font-size: 0.7rem;
+    }
+}
